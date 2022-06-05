@@ -1,0 +1,33 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "tsc",
+    "serve": "nodemon dist/index.js"
+  },
+  "author": "Rishabh Jain",
+  "license": "ISC",
+  "engines" : { 
+    "npm" : ">=6.13.4",
+    "node" : ">=12.14.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.3.5",
+    "typescript": "^4.7.3",
+    "uuid": "^8.3.2",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.40",
+    "ts-node": "^10.8.1"
+  }
+}
