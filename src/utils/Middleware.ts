@@ -13,11 +13,8 @@ export const checkToken = (req: Request, res: Response, next: NextFunction) => {
                 return res.send({ responseCode: ResponseCode.UNAUTHORIZED, responseMessage: "Please log in again" })
             } else {
                 if (tokenDecoded.email) {
-                    if (req.method == "GET") {
-                        req.query.email = tokenDecoded.email;
-                    } else {
-                        req.body.email = tokenDecoded.email;
-                    }
+                    req.query.email = tokenDecoded.email;
+                    req.body.email = tokenDecoded.email;
                     next();
                 } else {
                     return res.send({ responseCode: ResponseCode.UNAUTHORIZED, responseMessage: "Please log in again" })

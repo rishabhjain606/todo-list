@@ -4,7 +4,7 @@ import { Response, Request, NextFunction } from "express";
 import * as dotenv from "dotenv";
 import * as mongoose from "mongoose";
 import Logger from "./src/utils/Logger"
-import routes from  "./src/routes/index"
+import routes from  "./src/routes/routes"
 
 dotenv.config({ path: ".env" });
 const app = express();
