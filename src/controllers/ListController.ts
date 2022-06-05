@@ -58,6 +58,7 @@ export const getTaskList = async (req: Request, res: Response, next: NextFunctio
  * @return {*} 
  */
 export const createTask = async (req: Request, res: Response, next: NextFunction) => {
+    Logger.info("Create task: " + JSON.stringify(req.body))
     try {
         let check: boolean = Utils.checkRequest(["email", "text"], req.body);
         if (check) {
@@ -91,6 +92,7 @@ export const createTask = async (req: Request, res: Response, next: NextFunction
  * @return {*} 
  */
 export const updateTask = async (req: Request, res: Response, next: NextFunction) => {
+    Logger.info("Update task: " + JSON.stringify(req.body))
     try {
         let check: boolean = Utils.checkRequest(["email", "text", "id"], req.body);
         if (check) {
@@ -127,6 +129,7 @@ export const updateTask = async (req: Request, res: Response, next: NextFunction
  * @return {*} 
  */
 export const deleteTask = async (req: Request, res: Response, next: NextFunction) => {
+    Logger.info("Delete task: " + JSON.stringify(req.body))
     try {
         let check: boolean = Utils.checkRequest(["email", "id"], req.body);
         if (check) {

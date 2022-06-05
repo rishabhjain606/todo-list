@@ -1,7 +1,7 @@
 # todo-list
 
 A mini project that get and saves the task list for any user. It uses JWT for authentication of all requests.The project makes using of cutting edge technologies like node.js(framework-express), Mongodb(ODM-mongoose), typescript.
-
+Validity for any JWT token in this project is 30 days which can be changed by .env
 # minimum requirement
 Minimum node verion: 12.14
 
@@ -15,7 +15,5 @@ This is a Node.js application. The user needs to have NodeJS installed on the ma
 ```javascript 
 npm start
 ```
-- On browser open the swagger documentation by going to: http://localhost:3000/api-docs
-- Refer to API specification and the examples 
-- Test out the APIs by clicking on **Try it Out**
+- On browser open the postman documentation by going to: https://documenter.getpostman.com/view/10646341/Uz5Gpbyw
 
