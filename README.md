@@ -2,7 +2,7 @@
 
 A mini project that get and saves the task list for any user. It uses JWT for authentication of all requests.The project makes using of cutting edge technologies like node.js(framework-express), Mongodb(ODM-mongoose), typescript.
 Validity for any JWT token in this project is 30 days which can be changed by .env
-# minimum requirement
+# Minimum Requirement
 Minimum node verion: 12.14
 
 # How to Run? 
@@ -13,6 +13,7 @@ This is a Node.js application. The user needs to have NodeJS installed on the ma
 ** Run command** 
 
 ```javascript 
+npm install
 npm start
 ```
 - On browser open the postman documentation by going to: https://documenter.getpostman.com/view/10646341/Uz5Gpbyw
